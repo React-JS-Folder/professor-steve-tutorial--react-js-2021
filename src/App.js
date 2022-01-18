@@ -1,11 +1,19 @@
 import './App.css';
+import Header from './components/Header/Header'
 
 function App() {
+  const name = 'Marco';
+  const car = "BMW 5.0, 400hp";
+
   return (
     <div className="App">
-      <h1 className="hello">Hello World</h1>
-      <p style={{ color: 'magenta', backgroundColor: '#003', lineHeight: '2' }} >Paragraph with inline style </p>
-
+      <Header name={name} car={car} />
+      <h1>{name}</h1>
+      <h1>{car}</h1>
+      <hr />
+      <hr />
+      <hr />
+      <hr />
     </div>
   );
 }
