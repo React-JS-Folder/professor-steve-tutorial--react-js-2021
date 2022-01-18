@@ -1,0 +1,39 @@
+React JS Components are functions. Components have a return 
+the return is jsx 
+
+   return <h2>hello world</h2>;            // returns 1 object
+   
+   return <div> <h2>Hello world</h2> </div>;   // returns 2 objects
+
+
+To return on a separate line or multiple lines you need to add (  ) to the return  //javascript to end the line  adds ;  
+
+return (
+    code........
+);
+
+return can only have a top element (to wrap everything inside the return( )
+top element can be a html tag or a React fragment  //<div> </div>      // <> </>
+
+return (
+   <div>------------------------------//only 1 top element inside return 
+      <p>Hello</p>
+      <h3>warm heading</h3>
+   </div>
+)
+
+-----------------------------------------------------
+JSX is JavaScript + HTML (Some properties on html will change)
+
+html          jsx
+class      className           // <p className="paragraph2"> </p>
+for         htmlFor            // <label htmlFor="inputId"></label>     
+
+JSX can add variables as content, classes, id, properties values using curly braces to wrap a expression
+
+const appStyle = 'App';
+<div className={appStyle}>  </div>     //can be {variable}  // can be {a + b + d}   
+
+JSX - Inline style     = {{ }}   expression > object
+<p style={{ color: 'gold', backgroundColor: '#003', lineHeight: '2' }} >Paragraph with inline style </p>
+
