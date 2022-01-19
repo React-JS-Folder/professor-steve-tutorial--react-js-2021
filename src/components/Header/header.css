@@ -8,10 +8,9 @@
    flex-direction: row;
    justify-content: flex-start;
    align-items: center;
-}
-
-.masthead > h1 {
+ }
+ .masthead > h1 {
    flex-basis: 38vw;
    flex-grow: 0;
    flex-shrink: 1;
-}
+ }

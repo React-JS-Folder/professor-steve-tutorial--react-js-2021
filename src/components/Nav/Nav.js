@@ -1,10 +1,29 @@
-import React from 'react'
+import Link from '../Link/Link'
+import './nav.css';
 
-export default function Nav(props) {
-   return (
-      <div>
-         <h3>yes that is right, Marco' name is : {props.hisName}</h3>
-         <h3>and also .. his car is : {props.hisCar} </h3>
-      </div>
-   )
+export default function Nav() {
+   
+   const links = [
+      { 
+         title: 'Films', 
+         url: 'https://swapi.dev/api/films/'
+      },
+      { 
+         title: 'People', 
+         url: 'https://swapi.dev/api/people/'
+      },
+      { 
+         title: 'Planets', 
+         url: 'https://swapi.dev/api/planets/'
+      },
+   ];
+
+
+  return (
+   <nav>
+      {links.map((lnk) => (
+         <Link lnk={lnk} key={lnk.title} />
+      ))}
+   </nav>
+  );
 }
